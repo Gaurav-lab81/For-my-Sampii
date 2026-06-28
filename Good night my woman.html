@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subha Ratri, My Sampii 🌙</title>
+    <style>
+        :root {
+            --bg-dark: #0a0f1d;
+            --text-light: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent-gold: #f59e0b;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .main-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(12px);
+            border-radius: 24px;
+            padding: 40px 25px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.2s forwards cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .moon-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: float 4s infinite ease-in-out;
+        }
+
+        h1 {
+            font-family: "Georgia", serif;
+            font-weight: 400;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        .subtitle {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        p.message-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: transparent;
+            color: var(--text-light);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 14px 28px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        .btn:hover {
+            background: var(--text-light);
+            color: var(--bg-dark);
+            border-color: var(--text-light);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+        }
+
+        #hidden-letter {
+            display: none;
+            margin-top: 30px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: left;
+            opacity: 0;
+            transform: translateY(15px);
+            transition: all 0.8s ease;
+        }
+
+        #hidden-letter.reveal {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .letter-paragraph {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        .signature {
+            font-family: "Georgia", serif;
+            font-style: italic;
+            font-size: 1rem;
+            color: var(--accent-gold);
+            margin-top: 25px;
+            text-align: right;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- This pulls directly from your local file, completely bypassing internet blocks -->
+    <audio id="bedtime-music" loop>
+        <source src="dabangg.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="wrapper">
+        <div class="main-card">
+            <div class="moon-icon">🌙</div>
+            <h1>Good Night, SAMPII</h1>
+            <div class="subtitle">For My Wifeyyy</div>
+            
+            <p class="message-text">
+               Dhanewaddd merooo adhyarooo jastoo jindagii maaaa suryaaa baneraa aawna ko lagiiii meroo lifeeee brightest banaunaa ko lagiiiiiiii ma dherai naii bhagyamaniii xuu hajur laii payeraaaaaa😘😘😘
+            </p>
+
+            <button class="btn" id="reveal-btn" onclick="openLetter()">Before Bisram read this😘😘</button>
+
+            <div id="hidden-letter">
+                <p class="letter-paragraph">
+                    Good nighttt meriiiii mutuu meriii jaan Aaja ko din sakiyoo🌝❤️😭😘😘 dhanewadddd meriii mutuuuuu😭😭😭😘😘 sabai thok ko lagiiii😭❤️ I love youuuuuuuu😘😘😘😘 so muchhhh😭❤️❤️❤️ and moreeee😭😭❤️❤️ and moreeee😘😭😭❤️❤️ meriiii natkhatiii meriii second motherrr maile gareko sabaii galtiii mafff garidinusss haii😭😭😭 pleaseeeeeee😭😭😭 maa hajur laiii dukhaaa dinee kam gardinaaaa meriii mutuuuuu maileee bujheee aaba sadhaiii hajur ko sath dinxuu😭😭😭😭😭😭❤️❤️ kaile pani hajur ko sath xodinaaaa😘😘❤️❤️ promiseeeee maile jatii galti gareeee tyo sab ko lagiii mafff garidinusssssss😭😭😭😭😭❤️❤️ maileee sabaiii bujheee niii abaaaa aaja dekhiii aaile dekhiii hajur laii dherai dherai dheraii dheraii mayaaa garxuu hajur laii luckiest feel gardauxuuuu maile jatii galti gareee sabai ko lagiiii maff magxuuuuu maff garidinusss haii😭😭😭😘❤️❤️ pleasee😘😘😭😭😭e❤️ meriii mutuuuu hajur naii taaa hunu hunxaaaa hajur hernuss ta malaii katii dheraii mayaa garnu hunxaaa tesko lagiii infiniteeee chotii dhanewadddd aaba hajur janussss aani ninni garnusss haiii Subhaaa ratriiiiii merii dharam patniiii meriii wifeyyyyyy😭😭😭❤️❤️❤️❤️❤️❤️ 
+                </p>
+                <p class="letter-paragraph">
+                   Iloveyoyuuuuu somuchhhh😭😭😭❤️❤️❤️❤️❤️❤️❤️ aaja kaii jastaiii aaile kaiii jastaii hajur laii dheraii mayaaa garxuuuuu nayaaa nayaaa tarikaaa nikalxuuu😭😭😭😘❤️❤️❤️ hajur ko puranoo puntuuuu banxuuuu pahilaa jastaii nayaa😘❤️ nayaaa❤️ tarikaa le hajur lai dherai dherai mayaaa garxuuuu hajur laii dheraiii luckiest feel garauxuuu😭😭😭❤️❤️❤️😘😘 kaile pani bor hunaaaa didinaaaaaa😭😭❤️❤️ sadhaiii khusyaliii rakhxuuuuu😭😭❤️❤️ hajur ko dukhaaa ma sathi dinxuuuu😭😭😭😭❤️❤️ sadhaii sath dinxuuu aajhai ekpalta subhaa ratriiiii 😭😭😭😭😭😭😭💓💓💓💓💓😘😘😘
+                </p>
+                <div class="signature">With Love, — Your Pyaro Puntu😘😘❤️</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openLetter() {
+            const music = document.getElementById('bedtime-music');
+            if (music) {
+                music.volume = 0.6; 
+                music.play().then(() => {
+                    console.log("Local audio file started playing successfully.");
+                }).catch(error => {
+                    console.log("Error: Make sure dabangg.mp3 is in the same folder as this HTML file!", error);
+                });
+            }
+
+            const letter = document.getElementById('hidden-letter');
+            const button = document.getElementById('reveal-btn');
+            
+            letter.style.display = 'block';
+            
+            setTimeout(() => {
+                letter.classList.add('reveal');
+                button.innerText = "SWEET DREAMS ✨";
+                button.style.pointerEvents = "none";
+                letter.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            }, 50);
+        }
+    </script>
+</body>
+</html>
